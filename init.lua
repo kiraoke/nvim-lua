@@ -984,9 +984,7 @@ require('oil').setup {
   },
 }
 
-vim.keymap.set('n', '<leader>pv', function()
-  require('oil').toggle()
-end, { desc = 'Toggle [O]il' })
+vim.keymap.set('n', '<leader>pv', ":Oil<CR>", { desc = 'Open [P]roject [V]iewer' }) 
 
 require('lualine').setup()
 vim.keymap.set('x', '<leader>p', '"_dP', { desc = 'Paste [P]revious' })
