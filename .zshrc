@@ -55,7 +55,6 @@ if [[ $options[zle] = on ]]; then
   eval "$(/nix/store/d8fpqmf3igvi2qf2l78g6q3qmsh37j7i-fzf-0.58.0/bin/fzf --zsh)"
 fi
 
-  fastfetch
 
   # Enable Powerlevel10k instant prompt
   if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -91,8 +90,6 @@ fi
 
 
 # Aliases
-alias -- 177013='xdg-open https://nhentai.to/g/177013'
-alias -- 344322='xdg-open https://nhentai.net/g/344322'
 alias -- g=git
 alias -- ga='git add'
 alias -- gaa='git add --all'
@@ -112,11 +109,7 @@ alias -- grb='git rebase'
 alias -- grh='git reset --hard'
 alias -- grs='git reset'
 alias -- gs='git status'
-alias -- img='kitten icat'
-alias -- ls=eza
-alias -- rebuild='sudo nixos-rebuild switch --flake ~/flake#kage --impure'
-alias -- saymyname='echo Heisenberg'
-alias -- wifilogin='~/bits-login/login.sh'
+
 
 # Named Directory Hashes
 
